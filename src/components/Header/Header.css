@@ -1,0 +1,87 @@
+.header {
+    height: 42vw;
+    margin: 0 auto 30px auto;
+    /* background: url('../../assets/header_img.png') no-repeat;
+    background-position: center;
+    background-size: cover; */
+    position: relative;
+}
+.slide {
+    position: relative;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%; 
+    height: auto; 
+}
+
+.slick-prev, .slick-next {
+    z-index: 1; 
+    color: white; 
+    font-size: 24px; 
+}
+
+.slick-prev {
+    left: 10px !important; 
+}
+.slick-next {
+    right: 10px !important; 
+}
+
+.slick-prev:before, .slick-next:before {
+    color: white; /* Arrow color */
+}
+.header-contants {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+.header-contants h2 {
+    font-size: max(4.5vw, 22px);
+    color: white;
+    font-weight: 500;
+}
+.header-contants p {
+    font-size: 1.2vw;
+    color: white;
+}
+.header-contants button {
+    background-color: white;
+    border: none;
+    color: #49557e;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: max(1vw, 14px);
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.header-contants button:hover {
+    background-color: #49557e;
+    color: white;
+}
+
+@media (max-width: 1050px) {
+    .header-contants {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 750px) {
+    .header-contants {
+        max-width: 65%;
+        left: 12vw;
+    }
+    .header-contants p {
+        font-size: 2vw;
+    }
+    .header-contants button {
+        padding: 2vw 4vw;
+    }
+}

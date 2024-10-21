@@ -1,0 +1,147 @@
+.contact-us {
+  padding-top: 50px;
+}
+.contact-us-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.contact-us-img {
+  margin-bottom: 30px;
+}
+.contact-us-img p {
+  color: #676767;
+  text-align: start;
+  margin-bottom: 20px;
+  max-width: 400px;
+  line-height: 1.3;
+}
+.contact-us-img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.contact-us-container hr {
+  border: none;
+  width: 1px;
+  background-color: #c3c3c3;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.form-container p {
+  color: #676767;
+  text-align: center;
+}
+.form-container p:nth-child(1) {
+  font-size: 20px;
+  font-weight: 500;
+}
+.form-container p:nth-child(2) {
+  font-size: 16px;
+  font-weight: 500;
+}
+.contact-us-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.contact-us-form input {
+  width: 450px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.contact-us-form input:focus {
+  outline: 2px solid tomato;
+}
+.contact-us-form textarea {
+  width: 450px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.contact-us-form textarea:focus {
+  outline: 2px solid tomato;
+}
+.contact-us-form input::placeholder {
+  color: #676767;
+}
+.contact-us-form textarea::placeholder {
+  color: #676767;
+}
+.contact-us-form button {
+  width: 450px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #676767;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.contact-us-form button:hover {
+  background-color: tomato;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  position: relative;
+}
+.input-container .icon {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #676767;
+}
+.input-container .icons {
+  position: absolute;
+  left: 8px;
+  top: 39%;
+  transform: translateY(-50%);
+  color: #676767;
+}
+
+@media (max-width: 900px) {
+  .contact-us-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-us-form {
+    width: 100%;
+    max-width: 400px;
+  }
+  .contact-us-form input {
+    width: 100%;
+  }
+  .contact-us-form textarea {
+    width: 100%;
+  }
+  .contact-us-form button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-us {
+    text-align: left;
+  }
+}
