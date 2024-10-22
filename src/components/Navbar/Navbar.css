@@ -95,7 +95,7 @@
   top: 59px;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: rgba(104, 103, 103, 0.9);
   display: flex;
   flex-direction: column;
@@ -168,7 +168,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  bottom: 26vw;
+  margin-top: 160px;
 }
 .dropdown-mobile span {
   color: #000;
