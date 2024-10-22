@@ -157,7 +157,15 @@ const Nabvar = ({ setShowLogin, user, handleLogout }) => {
           </li>
           <li className="mobile-signin">
             {user ? (
-              <button onClick={handleLogout}>Logout</button>
+              <div className="user-info" onClick={toggleDropdown}>
+                <img src={assets.profile_icon} alt="user" />
+                {isDropdownOpen && (
+                  <div className="dropdown-mobile">
+                    <span>{user.name || user.email}</span>
+                    <button onClick={handleLogout}>Logout</button>
+                  </div>
+                )}
+              </div>
             ) : (
               <button
                 onClick={() => {

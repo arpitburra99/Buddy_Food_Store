@@ -150,6 +150,29 @@
   align-items: center;
   gap: 10px;
 }
+.mobile-signin .user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dropdown-mobile {
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  bottom: 26vw;
+}
+.dropdown-mobile span {
+  color: #000;
+}
 
 @media (max-width: 1050px) {
   .navbar .logo {
